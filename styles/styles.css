@@ -1,0 +1,278 @@
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: Rubik, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+
+/* Button*/
+.button{
+  font-family: Raleway, Arial, sans-serif ;
+  font-weight: 800;
+  color: #000000;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #FFE17F;
+  }
+
+  /* Header*/
+.cite-header{
+  background-color: #FFE17F;
+  color: #000000;
+}
+
+/* Navigation*/
+.user-navigation-link{
+  color: #000000;
+  text-decoration: none;
+  }
+
+.navigation-link{
+  font-family: Raleway, Arial, sans-serif ;
+  font-weight: 800;
+  color: #000000;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  }
+
+.catalog-link{
+  color: #000000;
+  text-decoration: none;
+  }
+
+/* Slider*/
+.slider-pagination-number{
+  font-family: Rubik, Arial, sans-serif ;
+  font-weight: 700;
+  font-size: 180px;
+  color:#FFFFFF;
+  text-align: right;
+  }
+
+.slider-pagination-slogan{
+  font-family: Raleway, Arial, sans-serif ;
+  font-weight: 800;
+  line-height: 50px;
+  }
+
+  /* Table*/
+  .slider-table th{
+    font-weight: 400;
+    font-size: 16px;
+    }
+
+  .slider-table td{
+    font-size: 36px;
+    color: #000000;
+    }
+
+/* Title*/
+.category-title{
+  font-family: Raleway, Arial, sans-serif ;
+  font-weight: 800;
+  line-height: 24px;
+  color: #000000;
+  text-transform: none;
+  text-align: left;
+}
+
+.advantage-pagination-title{
+  font-family: Raleway, Arial, sans-serif ;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+.delivery-information{
+  font-family: Raleway, Arial, sans-serif ;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* About-us*/
+.about-us-title{
+font-family: Raleway, Arial, sans-serif ;
+font-weight: 800;
+font-size: 50px;
+line-height: 50px;
+color: #000000;
+}
+
+.delivery-providers-list span{
+  font-family: Rubik;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000
+  }
+
+.delivery-providers-list li{
+  color:#FFE17F;
+  }
+
+  /* Contact*/
+ .contact-title{
+  font-family: Raleway, Arial, sans-serif ;
+  font-weight: 800;
+  font-size: 50px;
+  color: #000000;
+  }
+
+.contact h3{
+  font-family: Rubik, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  }
+
+.address{
+  font-style: normal;
+  }
+
+.contact-phone{
+  font-style: normal;
+  color: #444444;
+  text-decoration: underline;
+  }
+
+/* Subscription*/
+.subscribtion{
+  background-color: #F0F0F0;
+  }
+.subscription-title{
+  font-family: Raleway, Arial, sans-serif ;
+  font-weight: 800;
+  font-size: 50px;
+  color: #000000;
+  }
+
+/* Footter*/
+
+.cite-fotter{
+  background-color: #444444;
+  }
+
+.cite-fotter a{
+  color:#FFFFFF;
+  }
+
+.footer-contact-address{
+  font-family: Rubik, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color:#FFFFFF;
+  font-style: normal;
+  }
+
+.footer-navigation-list{
+  font-family: Raleway, Arial, sans-serif ;
+  font-weight: 800;
+  text-transform: uppercase;
+  }
+
+.footer-navigation-link{
+  text-decoration: none;
+  }
+
+/* Catalog-title*/
+.inner-header-title{
+  font-family: Raleway, Arial, sans-serif ;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.breadcrumbs{
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  list-style: none;
+}
+.breadcrumbs-link{
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Title */
+.filter-control-title,
+.select-control-title{
+  font-family: Raleway, Arial, sans-serif ;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.catalog-filter-lable{
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+}
+
+/* Decoration*/
+.button,
+.category-link,
+.delivery-form-pop-up{
+  text-decoration: none;
+  }
+
+.catalog-products{
+  background-color: #F0F0F0;
+}
+.product-container{
+  background-color: #FFFFFF;
+}
+.product-card-name{
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+}
+.product-card-link{
+  color: inherit;
+  text-decoration: none;
+}
+.product-card-price{
+  text-align: right;
+  line-height: 21px;
+}
+
+/* temporary to remove bullets*/
+.category-list,
+.contact-schedule,
+.navigation-list,
+.user-navigation-list,
+.catalog-list,
+.product-list{
+  list-style:none;
+}
