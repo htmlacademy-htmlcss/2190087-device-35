@@ -9,48 +9,54 @@
 
   <body>
     <header class="cite-header">
-      <img class="cite-header-logo" src="/images/logo.svg" width="145" height="36" alt="Логотип интернет-магазина гаджетов «Девайс»">
-      <div class="user-navigation-container">
-        <form action="#" method="post">
-          <input type="search" name="search" id="search" value="Поиск по сайту">
-          <input type="submit" value="Найти">
-        </form>
-
-        <nav class="user-navigation">
-          <ul class="user-navigation-list">
-            <li class="user-navigation-item">
-              <a class="user-navigation-link" href="#">Войти</a>
-            </li>
-            <li class="user-navigation-item">
-              <a class="user-navigation-link" href="#">Сравнить</a>
-            </li>
-            <li class="user-navigation-item">
-              <a class="user-navigation-link" href="#">Корзина</a>
-            </li>
-          </ul>
-        </nav>
+      <div class="header-container">
+        <a class="header-logo">
+          <img class="logo" src="/images/logo.svg" width="145" height="36" alt="Логотип интернет-магазина гаджетов «Девайс»">
+        </a>
+        <div class="user-navigation-container">
+          <form action="#" method="post">
+            <input type="search" name="search" id="search" value="Поиск по сайту">
+            <input type="submit" value="Найти">
+          </form>
+          <nav class="user-navigation">
+            <ul class="user-navigation-list">
+              <li class="user-navigation-item">
+                <a class="user-navigation-link log-in" href="#">Войти</a>
+              </li>
+              <li class="user-navigation-item">
+                <a class="user-navigation-link compare" href="#">Сравнить</a>
+              </li>
+              <li class="user-navigation-item">
+                <a class="user-navigation-link cart" href="#">Корзина</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="navigation-container">
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li class="navigation-item catalog">
+                <a class="navigation-link" href="#">Каталог товаров</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link delivery" href="#">Доставка</a>
+              </li>
+              <li class="navigation-item warranty">
+                <a class="navigation-link" href="#">Гарантия</a>
+              </li>
+              <li class="navigation-item contacts">
+                <a class="navigation-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-        <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-item catalog">
-              <a class="navigation-link" href="#">Каталог товаров</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link delivery" href="#">Доставка</a>
-            </li>
-            <li class="navigation-item warranty">
-              <a class="navigation-link" href="#">Гарантия</a>
-            </li>
-            <li class="navigation-item contact">
-              <a class="navigation-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
     </header>
 
 
     <main class="main-container main-inner">
       <header class="inner-header">
+       <div class="inner-header-container">
         <h1 class="inner-header-title">Моноподы для селфи</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -63,6 +69,7 @@
               <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
             </li>
           </ul>
+       </div>
       </header>
 
       <section class="catalog-products">
@@ -159,94 +166,100 @@
                  </a>
                 </li>
               </ul>
-            </div>
             <div class="catalog-pagination">
               <button class="paination-show-more" type="button">Загрузить еще</button>
               <ul class="pagination">
                 <li class="paginaction-item">
-                  <a class="pagination-link" href="#">Назад</a>
+                  <a class="pagination-link-back" href="#">Назад</a>
+                </li>
+                <div class="pagination-numbers">
+                <li class="pagination-item">
+                  <a class="pagination-link-number" href="#">1</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-link" href="#">1</a>
+                  <a class="pagination-link-number" href="#">2</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-link" href="#">2</a>
+                  <a class="pagination-link-number" href="#">3</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-link" href="#">3</a>
+                  <a class="pagination-link-number" href="#">...</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-link" href="#">...</a>
+                  <a class="pagination-link-number" href="#">15</a>
                 </li>
+              </div>
                 <li class="pagination-item">
-                  <a class="pagination-link" href="#">15</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">Вперед</a>
+                  <a class="pagination-link-forward" href="#">Вперед</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
+        </div>
       </section>
     </main>
 
-     <footer class="cite-fotter">
+    <footer class="cite-fotter">
       <div class="cite-footer-container">
-        <section class="footer-contact">
-          <h2 class="visually-hidden">Адрес</h2>
-            <img class="footer-contact-logo" src="/images/logo.svg" width="145" height="36" alt="Логотип интернет-магазина гаджетов «Девайс»">
-            <address class="footer-contact-address">
-            <p class="contact-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            </address>
-        </section>
+        <a class="fotter-logo">
+          <img class="logo" src="/images/logo.svg" width="145" height="36" alt="Логотип интернет-магазина гаджетов «Девайс»">
+        </a>
         <div class="footer-navigation-container">
-            <section class="footer-navigation">
-              <h2 class="visually-hidden">Меню</h2>
-                <ul class="footer-navigation-list">
-                  <li class="footer-navigation-item">
-                    <a class="footer-navigation-link" href="#">Доставка</a>
-                  </li>
-                  <li class="footer-navigation-item">
-                    <a class="footer-navigation-link" href="#">Гарантия</a>
-                  </li>
-                  <li class="footer-navigation-item">
-                    <a class="footer-navigation-link" href="#">Контакты</a>
-                  </li>
-                </ul>
-            </section>
-            <section class="footer-social">
-              <h2 class="visually-hidden">Социальные сети</h2>
-                <ul class="footer-social-list">
-                  <li class="footer-social-item">
-                    <a class="telegram" href="https://t.me/htmlacademy">
-                      <span class="visually-hidden">Телеграм</span>
-                    </a>
-                  </li>
-                  <li class="footer-social-item">
-                    <a class="youtube" href="https://www.youtube.com/user/htmlacademyru">
-                      <span class="visually-hidden">YouTube</span>
-                    </a>
-                  </li>
-                  <li class="footer-social-item">
-                    <a class="twitter" href="https://twitter.com/htmlacademy_ru">
-                      <span class="visually-hidden">Твиттер</span>
-                    </a>
-                  </li>
-                </ul>
-            </section>
-          </div>
-          <div class="footer-contact-container">
-            <section class="footer-contact-tel">
-              <h2 class="visually-hidden">Телефон</h2>
+          <section class="footer-contact">
+            <h2 class="visually-hidden">Адрес</h2>
+              <address class="footer-contact-address">
+              <p class="contact-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+              </address>
+          </section>
+          <section class="footer-navigation">
+            <h2 class="visually-hidden">Меню</h2>
+              <ul class="footer-navigation-list">
+                <li class="footer-navigation-item">
+                  <a class="footer-navigation-link" href="#">Доставка</a>
+                </li>
+                <li class="footer-navigation-item">
+                  <a class="footer-navigation-link" href="#">Гарантия</a>
+                </li>
+                <li class="footer-navigation-item">
+                  <a class="footer-navigation-link" href="#">Контакты</a>
+                </li>
+              </ul>
+          </section>
+          <section class="footer-contact-tel">
+            <h2 class="visually-hidden">Телефон</h2>
               <address class="footer-contact-address">
                 <a class="contact-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
-                </address>
+              </address>
+          </section>
+        </div>
+        <div class="footer-social-container">
+          <section class="footer-social">
+            <h2 class="visually-hidden">Социальные сети</h2>
+              <ul class="footer-social-list">
+                <li class="footer-social-item">
+                  <a class="telegram" href="https://t.me/htmlacademy">
+                    <span class="visually-hidden">Телеграм</span>
+                  </a>
+                </li>
+                <li class="footer-social-item">
+                  <a class="youtube" href="https://www.youtube.com/user/htmlacademyru">
+                    <span class="visually-hidden">YouTube</span>
+                  </a>
+                </li>
+                <li class="footer-social-item">
+                  <a class="twitter" href="https://twitter.com/htmlacademy_ru">
+                    <span class="visually-hidden">Твиттер</span>
+                  </a>
+                </li>
+              </ul>
+          </section>
+           <div class="htmlacademy-link-wrapper">
               <a class="htmlacademy-link" href="https://htmlacademy.ru/"> <img src="/images/html-academy-link.svg" width="115" height="33" alt="Ссылка на сайт HTML Academy">
-                </a>
-            </section>
-          </div>
+              </a>
+           </div>
       </div>
+    </div>
     </footer>
   </body>
 </html>
