@@ -48,7 +48,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #444444;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .main-container {
@@ -73,14 +73,14 @@ body {
   /* Header*/
 .cite-header{
   width: 1160px;
-  height: 300px;
   margin: 0 auto;
-  background-color: #FFE17F;
   color: #000000;
 }
 
 .header-container{
-  padding: 20px 60px 0 60px;
+  padding: 0 60px;
+  background-image: linear-gradient( transparent 12%, #FFE17F 12%);
+  background-size: 166px;
 }
 
 .header-logo{
@@ -99,7 +99,12 @@ body {
   justify-content: space-between;
   margin: 30px 0;
 }
-
+.search-form{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 517px;
+  box-sizing: border-box;
+}
 .user-navigation-list{
   display: flex;
   flex-wrap: wrap;
@@ -179,13 +184,12 @@ body {
   margin: 0 auto;
   justify-content: space-between;
   padding: 0;
-  margin-top: -30px;
+  margin-top: 0;
+  background-image: linear-gradient(#FFE17F 21%, transparent 21%);
 }
-
 .slider-image{
   display: block;
   margin-right: 40px;
-  margin-top: -120px;
   padding: 0;
 }
 .bestsellers-preview{
@@ -197,6 +201,8 @@ body {
 .bestsellers-description {
   width: 560px;
   padding: 0;
+  margin: 0;
+  padding-top: 90px;
 }
 
 .slider-pagination-number{
@@ -207,7 +213,6 @@ body {
   text-align: right;
   display: block;
   padding-right: 49px;
-  margin-top:-20px;
   }
 
 .slider-pagination-slogan{
@@ -240,33 +245,25 @@ body {
     min-width: 150px;
     }
 
-/* Category*/
-.category-container{
+.category{
   display: flex;
   flex-wrap: wrap;
-}
-.category{
   width: 1160px;
   margin: 0 auto;
-  margin-top: 70px;
-  margin-bottom: 70px;
-}
 
+}
 .category-list{
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  gap: 40px;
+  width: 1160px;
+  margin: 0 auto;
   list-style:none;
-}
-.category-item{
-  width: 160px;
-  margin-right: 40px;
+  padding: 0;
 }
 
-li.category-item:last-child{
-  margin-right: 0;
-}
+
+
 .category-image-wrapper{
   display: flex;
   align-items: center;
@@ -287,10 +284,12 @@ li.category-item:last-child{
   color: #000000;
   text-transform: none;
   text-align: left;
-  letter-spacing: -0.036px;
+  font-size: 18px;
+  letter-spacing: -0.36px;
   margin-top: 33px;
   margin-bottom: 0%;
   max-width: 160px;
+  box-sizing: border-box;
 }
 
 /* Advantages*/
@@ -630,24 +629,57 @@ li.category-item:last-child{
   color: #000000;
 }
 .product-list{
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  gap: 40px;
   margin:0;
-  padding: 0;
+  padding: 70px 40px 40px;
   list-style:none;
 }
-/* Catalog-pagination*/
+.product-card{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.product-card-content{
+  display: flex;
+  margin: 32px 0 4px;
+  justify-content: space-between;
+}
+.product-card-name{
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+  margin: 0;
+  flex-basis: 200px;
+  flex-grow: 1;
+}
+.product-card-price{
+  flex-basis: auto;
+  flex-grow: 3;
+}
+.product-card-link{
+  color: inherit;
+  text-decoration: none;
+}
+.product-card-price{
+  text-align: right;
+  line-height: 21px;
+}
+.product-card-image{
+  object-fit: contain;
+}
 
 .pagination{
-  display: flex;
+  display:flex;
+  justify-content: space-between;
   padding: 0;
   list-style-type: none;
   background-color: #F0F0F0;
   margin: 44px 40px 0;
+  min-width: 200px;
 }
-.pagination-numbers{
-  display: flex;
-  width: 200px;
-  margin: 0 auto;
-}
+
 
 .pagination-link-back{
   display: block;
@@ -655,7 +687,6 @@ li.category-item:last-child{
   width: 128px;
   height: 71px;
   padding: 25px;
-
 }
 .pagination-link-number{
   display: block;
@@ -672,6 +703,12 @@ li.category-item:last-child{
   height: 71px;
   padding: 25px;
 }
+.pagination-prev{
+  margin-right: auto;
+}
+.pagination-next{
+margin-left: auto;
+}
 .paination-show-more{
   margin: 0 40px;
   width: 760px;
@@ -685,19 +722,7 @@ li.category-item:last-child{
   text-decoration: none;
   }
 
-.product-card-name{
-  font-weight: 700;
-  line-height: 20px;
-  color: #000000;
-}
-.product-card-link{
-  color: inherit;
-  text-decoration: none;
-}
-.product-card-price{
-  text-align: right;
-  line-height: 21px;
-}
+
 
 /* temporary to remove bullets*/
 .contact-schedule,
