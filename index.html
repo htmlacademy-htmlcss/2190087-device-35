@@ -10,8 +10,8 @@
   <body>
     <header class="cite-header">
       <div class="header-container">
-        <a class="logo" href="/index.html">
-          <img class="header-logo" src="/images/logo-header.svg" width="145" height="36" alt="Логотип интернет-магазина гаджетов «Девайс»">
+        <a class="logo" href="index.html">
+          <img class="header-logo" src="images/logo-header.svg" width="145" height="36" alt="Логотип интернет-магазина гаджетов «Девайс»">
         </a>
         <div class="user-navigation-container">
           <form  class="search-form" action="#" method="post">
@@ -119,7 +119,7 @@
           <div class="bestsellers-preview">
             <h2 class="visually-hidden">Лидеры продаж</h2>
                 <div class="slider-wrapper">
-                  <img class="slider-image" src="/images/slider-drone.png" width="560" height="560" alt="Пример лидера продаж">
+                  <img class="slider-image" src="images/slider-drone.png" width="560" height="560" alt="Пример лидера продаж">
                   <div class="slider-controls">
                     <button class="slider-button slider-prev" type="button">
                       <span class="visually-hidden">Предыдущее фото</span>
@@ -312,7 +312,7 @@
       <div class="cite-footer-wrapper">
         <div class="footer-logo">
           <a class="logo" href="/index.html">
-            <img class="footer-logo" src="/images/logo-footer.svg" width="145" height="36" alt="Логотип интернет-магазина гаджетов «Девайс»"></a>
+            <img class="footer-logo" src="images/logo-footer.svg" width="145" height="36" alt="Логотип интернет-магазина гаджетов «Девайс»"></a>
         </div>
         <div class="cite-footer-grid-container">
           <section class="footer-contact">
@@ -414,13 +414,13 @@
                   <span class="form-label form-label-icon">
                   <label class="form-label delivery-form-lable" for="delivery-quantity">Количество</label>
                   <span class="tooltip">
-                    <button class="tooltip-toggle" type="button">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-delivery-quantity">
                       <svg class="tooltip-toggle-icon" width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3 0H1V2H3V0Z" fill="black"/>
                         <path d="M3 4H1V12H3V4Z" fill="black"/>
                         </svg>
                     </button>
-                        <span class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
+                        <span class="tooltip-text" role="tooltip" id="tooltip-delivery-quantity">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
                   </span>
                 </span>
 
