@@ -12,10 +12,10 @@
       <div class="header-container">
         <a class="logo" href="/index.html">
           <img class="header-logo" src="/images/logo-header.svg" width="145" height="36" alt="Логотип интернет-магазина гаджетов «Девайс»">
-                </a>
+        </a>
         <div class="user-navigation-container">
           <form  class="search-form" action="#" method="post">
-            <input class="search-form-input" type="search" name="search" id="search" value="Поиск по сайту">
+            <input class="search-form-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
             <input class="search-form-button" type="submit" value="Найти">
           </form>
           <nav class="user-navigation">
@@ -38,6 +38,35 @@
                   <svg class="user-navigation-icon" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z" fill="#000"/></svg>
                   Корзина
                 </a>
+                <div class="popover popover-cart">
+                  <div class="popover-wrapper">
+                    <h2 class="visually-hidden">Корзина</h2>
+                    <ul class="cart-items-list">
+                      <li class="cart-item">
+                        <p class="cart-item-title cart-item-monopod">Любительская селфи-палка</p>
+                        <button type="button" class="cart-item-button">
+                          <span class="visually-hidden">Удалить из корзины</span>
+                        </button>
+                      </li>
+                      <li class="cart-item">
+                        <p class="cart-item-title cart-item-pro-monopod">Профессиональная селфи-палка</p>
+                        <button type="button" class="cart-item-button">
+                          <span class="visually-hidden">Удалить из корзины</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="cart-information">
+                    <p class="cart-items-number">Товаров: 2</p>
+                    <p class="cart-items-amount">Сумма: 2000 ₽</p>
+
+                  </div>
+                  <a class="button-open-cart" href="#">
+                    <span>Открыть корзину</span>
+                  </a>
+                </div>
+
               </li>
             </ul>
           </nav>
@@ -49,6 +78,20 @@
                   Каталог товаров
                   <svg class="navigation-catalog-icon" aria-hidden="true" focusable="false" width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25.79" r="24" stroke="#000" stroke-width="2"/><g clip-path="url(#a)"><path d="M33 24.79h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000"/></g><defs><clipPath id="a"><path fill="#fff" d="M17 17.79h16v16H17z"/></clipPath></defs></svg>
                 </a>
+                <ul class="subcatalog-list">
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-item-link" href="#">Виртуальная реальность</a></li>
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-item-link" href="#">Моноподы для cелфи</a></li>
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-item-link" href="#">Экшн-камеры</a></li>
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-item-link" href="#">Фитнес-браслеты</a></li>
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-item-link" href="#">Умные часы</a></li>
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-item-link" href="#">Квадрокоптеры</a></li>
+                </ul>
               </li>
             </ul>
             <ul class="navigation-list">
@@ -70,54 +113,63 @@
     <main class="main-container main-index">
       <div class="page-container">
         <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
-        <div class="slider-container">
-          <section class="bestsellers-preview">
+
+        <section class="slider-container">
+
+          <div class="bestsellers-preview">
             <h2 class="visually-hidden">Лидеры продаж</h2>
-            <img class="slider-image" src="/images/slider-drone.png" width="560" height="560" alt="Пример лидера продаж">
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующее фото</span>
-            </button>
-            <ol class="slider-pagination">
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                  <span class="visually-hidden">1 фото</span>
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">2 фото</span>
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">3 фото</span>
-                </button>
-              </li>
-            </ol>
-          </section>
-          <section class="bestsellers-description">
+                <div class="slider-wrapper">
+                  <img class="slider-image" src="/images/slider-drone.png" width="560" height="560" alt="Пример лидера продаж">
+                  <div class="slider-controls">
+                    <button class="slider-button slider-prev" type="button">
+                      <span class="visually-hidden">Предыдущее фото</span>
+                    </button>
+                    <button class="slider-button slider-next" type="button">
+                      <span class="visually-hidden">Следующее фото</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+                  <ol class="slider-pagination">
+                    <li class="slider-pagination-item">
+                      <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                        <span class="visually-hidden">1 фото</span>
+                      </button>
+                    </li>
+                    <li class="slider-pagination-item">
+                      <button class="slider-pagination-button" type="button">
+                        <span class="visually-hidden">2 фото</span>
+                      </button>
+                    </li>
+                    <li class="slider-pagination-item">
+                      <button class="slider-pagination-button" type="button">
+                        <span class="visually-hidden">3 фото</span>
+                      </button>
+                    </li>
+                  </ol>
+
+          <div class="bestsellers-description">
             <h3 class="visually-hidden">Детали лидера продаж</h3>
             <span class="slider-pagination-number">01</span>
             <p class="slider-pagination-slogan">Порхает как бабочка, жалит как пчела!</p>
             <p class="slider-pagination-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="button product-details" href="#">Подробнее</a>
             <div class="slider-table-wrapper">
-            <table class="slider-table">
-              <tr>
-                <td>800 <span class="unit">м</span></td>
-                <td>50 <span class="unit">м</span></td>
-              </tr>
-              <tr>
-                <th>Дальность полета</th>
-                <th>Радиус поражения</th>
-              </tr>
-            </table>
+              <table class="slider-table">
+                <tr>
+                  <td>800 <span class="unit">м</span></td>
+                  <td>50 <span class="unit">м</span></td>
+                </tr>
+                <tr>
+                  <th>Дальность полета</th>
+                  <th>Радиус поражения</th>
+                </tr>
+              </table>
+            </div>
           </div>
-          </section>
-        </div>
+
+        </section>
 
 
           <section class="category">
@@ -160,14 +212,14 @@
                 </a>
               </li>
             </ul>
-          </section>
+        </section>
 
       <div class="advantages-container">
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
           <div class="advantages-list-container">
-            <ol class="advantage-pagination">
-              <li class="advantage-pagination-item">
+            <ol class="advantage-pagination-list">
+              <li class="advantage-pagination-item ">
                 <button class=" advantage-pagination-button advantage-pagination-button-current" type="button">Доставка</button>
               </li>
               <li class="advantage-pagination-item">
@@ -186,7 +238,7 @@
     </div>
 
 
-          <section class="delivery-form">
+          <section class="delivery-block">
             <h2 class="visually-hidden">Доставка редкого товара</h2>
               <a class="delivery-pop-up-link" href="#">
                 <p class="delivery-information">Доставим редкий товар под заказ</p>
@@ -245,8 +297,8 @@
           </div>
           <div class="subscription-form-container">
             <form class="subscription-form">
-              <input type="email" name="subscription-email" id="e-mail" value="Ваш e-mail">
-              <input type="submit" value="Подписаться">
+              <input class="subscription-form-input" type="email" name="subscription-email" id="e-mail" placeholder="Ваш e-mail">
+              <input class="subscription-form-button" type="submit" value="Подписаться">
             </form>
             <span class="subscription-free">Это бесплатно</span>
           </div>
@@ -258,15 +310,16 @@
 
     <footer class="cite-footer">
       <div class="cite-footer-wrapper">
-        <section class="footer-logo">
+        <div class="footer-logo">
           <a class="logo" href="/index.html">
             <img class="footer-logo" src="/images/logo-footer.svg" width="145" height="36" alt="Логотип интернет-магазина гаджетов «Девайс»"></a>
-        </section>
+        </div>
         <div class="cite-footer-grid-container">
           <section class="footer-contact">
-            <address class="footer-contact-address">
-              <p class="contact-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            </address>
+            <h2 class="visually-hidden">Адрес</h2>
+              <address class="footer-contact-address">
+                <p class="contact-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+              </address>
           </section>
 
           <section class="footer-navigation">
@@ -290,7 +343,6 @@
                 <a class="contact-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
               </address>
           </section>
-
 
             <h2 class="visually-hidden">Социальные сети</h2>
               <ul class="footer-social-list">
@@ -330,8 +382,63 @@
                   <path d="M109.4 27L105.8 18.1H103.6L108.4 29.7C108.1 30.6 107.7 30.9 106.7 30.9H104.2V32.9H106.7C108.5 32.9 109.5 32.1 110.2 30.3L114.9 18.1H112.8L109.4 27Z" />
                   </svg>
                 </a>
-              </div>
+             </div>
+          </div>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-delivery">
+        <section class="modal-content">
+          <div class="delivery-title-wrapper">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+            </button>
+          </div>
+
+            <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group delivery-form-name">
+                  <label class="form-label" for="delivery-name">Ваше имя:</label>
+                <input class="field delivery-name-field delivery-name-field-empty" type="text" id="delivery-name" name="delivery-name" placeholder="Введите имя">
+              </p>
+              <p class="field-group delivery-form-email">
+                  <label class="form-label" for="delivery-email">Ваш e-mail:</label>
+                <input class="field delivery-email-field field-incorrect email-incorrect" type="email" id="delivery-email" name="delivery-email" placeholder="почта" required>
+              </p>
+              <p class="field-group delivery-form-items">
+                <label class="form-label" for="delivery-items">Что нужно привезти:</label>
+                <input class="field delivery-items-field" type="text" id="delivery-items" name="delivery-items" placeholder="В свободной форме" disabled>
+              </p>
+              <div class="field-group-quantity">
+                <p class="field-group delivery-form-quantity">
+                  <span class="form-label form-label-icon">
+                  <label class="form-label delivery-form-lable" for="delivery-quantity">Количество</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button">
+                      <svg class="tooltip-toggle-icon" width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 0H1V2H3V0Z" fill="black"/>
+                        <path d="M3 4H1V12H3V4Z" fill="black"/>
+                        </svg>
+                    </button>
+                        <span class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
+                  </span>
+                </span>
+
+                <div class="delivery-form-quantity-wrapper">
+                  <button type="button" class="delivery-quantity-less">
+                    <span class="visually-hidden">Меньше</span>
+                  </button>
+                  <input class="field delivery-quantity-field" type="number" min="1" step="1" id="delivery-quantity" name="delivery-quantity" placeholder="1">
+                  <button type="button" class="delivery-quantity-more">
+                    <span class="visually-hidden">Больше</span>
+                  </button>
+                </div>
+
+            </div>
+              <button class="button delivery-submit" type="submit">Отправить</button>
+            </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
