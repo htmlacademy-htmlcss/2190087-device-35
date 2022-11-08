@@ -224,7 +224,7 @@ body {
   display: block;
   color: #000000;
   text-decoration: none;
-  padding-left: 25px;
+  padding-left: 33px;
   }
 .user-navigation-link:hover{
   opacity: 60%;
@@ -239,7 +239,7 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 13px;
   margin: auto;
 }
 .products-number-in-cart{
@@ -247,7 +247,7 @@ body {
   position: absolute;
   top: 5px;
   bottom: 0;
-  left: -15px;
+  left: -2px;
   font-size: 14px;
   line-height: 20px;
   margin: 0;
@@ -1156,6 +1156,7 @@ body {
 
   .subscription-free{
     padding-left: 32px;
+    margin: auto 0;
     background-image: url(../images/subscription-free.svg);
     background-repeat: no-repeat;
     background-position: left;
