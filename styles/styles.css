@@ -129,7 +129,7 @@ body {
 
 .header-container{
   padding: 0 60px 5px 60px;
-  background-image: linear-gradient( transparent 12%, #FFE17F 12%);
+  background-image: linear-gradient( transparent 10%, #FFE17F 10%);
   background-size: 166px;
 }
 
@@ -139,13 +139,13 @@ body {
   display: flex;
   width: 1040px;
   justify-content: space-between;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 .search-form{
   display: grid;
   grid-template-columns: 1fr auto;
   box-sizing: border-box;
-  margin-right: 26px;
+  margin-right: 20px;
 
 }
 .search-form-input{
@@ -179,7 +179,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  padding: 10px 56px;
+  padding: 10px 55px;
   background-color:rgba(255, 225, 127, 1);
   border: 2px solid black;
   border-radius: 0 50px 50px 0;
@@ -208,9 +208,12 @@ body {
 }
 .user-navigation-item{
   position: relative;
+  padding: 5px;
   margin-left: auto;
   margin-right: 0;
-
+}
+.user-navigation-item:nth-child(3){
+  margin-left: 25px;
 }
 .user-navigation-item:first-child{
   margin-left: 0;
@@ -221,7 +224,7 @@ body {
   display: block;
   color: #000000;
   text-decoration: none;
-  padding-left: 22px;
+  padding-left: 25px;
   }
 .user-navigation-link:hover{
   opacity: 60%;
@@ -380,6 +383,8 @@ body {
   width: 100%;
   justify-content: space-between;
   margin: 0 auto;
+  padding: 10px 0;
+
   }
   .navigation-catalog{
     display: flex;
@@ -447,15 +452,14 @@ body {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    list-style-type:none;
-    width: 471px;
+    list-style-type: none;
+    width: 470px;
   }
   .navigation-item{
     margin-left: 0;
     margin-right: auto;
   }
   .navigation-item:nth-child(3n){
-    margin-left: auto;
     margin-right: 0;
   }
   .navigation-link{
@@ -501,12 +505,13 @@ body {
   padding: 0;
   margin-top: 0;
   margin-bottom: 70px;
-  background-image: linear-gradient(#FFE17F 26%, transparent 26%);
+  background-image: linear-gradient(#FFE17F 20%, transparent 20%);
 }
 .slider-image{
   display: block;
-  margin-right: 40px;
+  margin-top: -40px;
   padding: 0;
+  object-fit: contain;
 }
 .slider-button{
   width:20px;
@@ -532,9 +537,10 @@ body {
   transform: rotate(180deg);
 }
 
-.bestsellers-preview{
+.slider-image-container{
   width: 560px;
   margin: 0;
+  margin-right: 40px;
   padding: 0;
 }
 .slider-pagination{
@@ -574,25 +580,33 @@ body {
 .slider-pagination-button-current{
   background-color: black;
 }
-.slider-wrapper{
-  position: relative;
+.slider-item{
+  display: flex;
+}
+.slider-list{
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+  list-style-type: none;
+}
+.slider-item:not(.current-slide){
+  display: none;
 }
 
 .slider-controls{
   position: absolute;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  top:50%;
-  transform: translateY(-50%);
-
+  width: 530px;
+  top: 180px;
+  left: 30px;
 }
 
-.bestsellers-description {
+.slider-description-container {
   width: 560px;
   padding: 0;
   margin: 0;
-  padding-top: 85px;
+  padding-top: 55px;
 }
 
 .slider-pagination-number{
@@ -602,7 +616,7 @@ body {
   color:#FFFFFF;
   text-align: right;
   display: block;
-  padding-right: 49px;
+  padding-right: 50px;
   }
 
 .slider-pagination-slogan{
@@ -615,12 +629,12 @@ body {
   }
 
   .slider-pagination-description{
-    margin: 29px 0 60px 0;
+    margin: 29px 0 50px 0;
   }
 
   /* Slider-table*/
   .slider-table-wrapper{
-    padding: 60px 393px 38px 0;
+    margin-top: 50px;
   }
 
   .slider-table th{
@@ -628,6 +642,7 @@ body {
     font-size: 16px;
     min-width: 150px;
     padding: 0;
+    padding-top: 10px;
     text-align: left;
     }
 
@@ -635,6 +650,10 @@ body {
     font-size: 36px;
     color: #000000;
     min-width: 150px;
+    padding: 0;
+    }
+    .slider-table td{
+      padding-right:  7px;
     }
 
   /* Category-section*/
@@ -706,39 +725,40 @@ body {
   outline: 2px solid #AF4FFF;
 }
 
-/* Advantages*/
-.advantages-container {
+/* Services*/
+.services-container {
   background-image: linear-gradient(transparent 26%, #F0F0F0 26%);
-  margin-top: 70px;
-  padding-bottom: 72px;
+  margin-top: 80px;
+  padding-bottom: 100px;
 }
 
-.advantages{
+.services{
   display: flex;
   width: 1160px;
   margin: 0 auto;
 }
-.advantages-list-container{
+.services-list-container{
   width: 287px;
 }
-.advantages-description{
+.services-description{
   position: relative;
   max-width: 475px;
   padding: 0;
   padding-left: 116px;
   margin-top: 73px;
-  padding-right: 246px;
+  padding-right: 220px;
 }
-.advantage-pagination-list{
+.services-pagination-list{
   list-style: none;
   border-right: 7px solid #000;
+  padding: 0;
   padding-top:64px;
   margin: 0;
 }
-.advantage-pagination-item{
-  margin-bottom: 50px;
+.services-pagination-item{
+  margin-bottom: 35px;
 }
-.advantage-pagination-title{
+.services-pagination-title{
   font-family: Raleway, Arial, sans-serif ;
   font-weight: 800;
   font-size: 50px;
@@ -747,19 +767,46 @@ body {
   margin: 0;
   margin-bottom: 34px;
 }
-.advantage-pagination-title::after{
+.services-pagination-title-delivery::after{
   position: absolute;
   content: "";
   width: 136px;
   height: 164px;
-  background-image: url("../images/advantages_delivery.svg");
+  background-image: url("../images/services_delivery.svg");
   background-repeat: no-repeat;
   right: 0;
 }
-.advantage-pagination-detail{
+.services-pagination-title-warranty::after{
+  position: absolute;
+  content: "";
+  width: 171px;
+  height: 195px;
+  background-image: url("../images/services_warranty.svg");
+  background-repeat: no-repeat;
+  right: 0;
+}
+.services-pagination-title-credit::after{
+  position: absolute;
+  content: "";
+  width: 156px;
+  height: 1188px;
+  background-image: url("../images/services_credit.svg");
+  background-repeat: no-repeat;
+  right: 0;
+}
+.servises-list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.services-item:not(.services-current){
+  display: none;
+
+}
+.services-pagination-detail{
   margin: 0;
 }
-.advantage-pagination-button{
+.services-pagination-button{
   position: relative;
   display: inline-block;
   width: 160px;
@@ -778,7 +825,7 @@ body {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   }
-  .advantage-pagination-button::before{
+  .services-pagination-button::before{
     position: absolute;
     z-index: -1;
     display: block;
@@ -798,7 +845,7 @@ body {
 
 
 
-  .advantage-pagination-button-current::before{
+  .services-pagination-button-current::before{
     position: absolute;
     z-index: -1;
     top: 0;
@@ -806,39 +853,39 @@ body {
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 245px;
+    width: 280px;
     height: 100%;
     content: '';
     background-color: #000;
-
-  }   .advantage-pagination-button-current{
+  }
+  .services-pagination-button-current{
     color: #FFE17F;
     background-color: #000;
   }
-  .advantage-pagination-button:hover::before{
+  .services-pagination-button:hover::before{
     height: 100%;
   }
-  .advantage-pagination-button:active::before{
+  .services-pagination-button:active::before{
     height: 100%;
     background-color: #ffc700;
   }
-  .advantage-pagination-button:focus-visible{
+  .services-pagination-button:focus-visible{
     outline: 2px solid #AF4FFF;
   }
-  .advantage-pagination-button:disabled{
+  .services-pagination-button:disabled{
     opacity:30%;
   }
-  .advantage-pagination-button-current:hover {
+  .services-pagination-button-current:hover {
     padding-left: 25px;
   }
-  .advantage-pagination-button-current:active::before{
+  .services-pagination-button-current:active::before{
     height: 100%;
     background-color: #000;
   }
-  .advantage-pagination-button-current:focus-visible::before{
+  .services-pagination-button-current:focus-visible::before{
     outline: 2px solid #AF4FFF;
   }
-  .advantage-pagination-button-current:active {
+  .services-pagination-button-current:active {
     padding-left: 25px;
   }
 
@@ -919,7 +966,7 @@ body {
 }
 .about-us{
   width: 520px;
-  margin-right: 131px;
+  margin-right: 110px;
 }
 .contact{
   width: 532px;
@@ -933,8 +980,8 @@ body {
   line-height: 50px;
   color: #000000;
   margin:0;
-  margin-bottom: 48px;
-  padding-top: 47px;
+  margin-bottom: 45px;
+  padding-top: 45px;
 
 }
 .about-title::before{
@@ -948,10 +995,12 @@ body {
 }
 .about-us-details{
   display: block;
-  padding-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 .delivery-providers-list{
-  margin-bottom: 40px;
+  padding-left: 20px;
+  margin-bottom: 30px;
 }
 .delivery-providers-list span{
   font-family: Rubik;
@@ -960,12 +1009,14 @@ body {
   color: #000000
   }
 .delivery-providers-list li{
+  margin-bottom: 5px;
   color:#FFE17F;
   }
 .contact-title{
   font-family: Rubik, Arial, sans-serif;
   font-weight: 700;
   font-size: 24px;
+  margin-top: 30px;
   margin-bottom: 15px;
   }
 .address{
@@ -990,8 +1041,8 @@ body {
   }
   .contact-schedule{
     padding: 0;
-    margin: 0 0 40px 0;
-    list-style:none;
+    margin: 0 0 30px 0;
+    list-style: none;
   }
 
 
@@ -1128,8 +1179,8 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: 240px 550px 240px;
-  gap: 64px 65px;
-  margin-top: 35px;
+  gap: 48px 65px;
+  margin-top: 25px;
   margin-bottom: 61px;
 }
 
