@@ -1861,6 +1861,7 @@ body {
   position: relative;
   display: block;
   padding-left: 36px;
+  cursor: pointer;
 }
 
 .control-mark {
@@ -1906,7 +1907,7 @@ body {
 
 .control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
-  top: 5px;
+  top: 4px;
   left: 4px;
   width: 8px;
   height: 8px;
