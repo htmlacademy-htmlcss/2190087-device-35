@@ -168,7 +168,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  background-color: rgba(255, 225, 127, 1);
+  background-color: inherit;
   background-image: url("../images/search.svg");
   background-position: 15px;
   background-repeat: no-repeat;
@@ -203,7 +203,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  background-color: rgba(255, 225, 127, 1);
+  background-color: inherit;
   border: 2px solid #000000;
   border-radius: 0 50px 50px 0;
 }
@@ -1203,7 +1203,7 @@ body {
   right: 0;
   margin: 0;
   padding: 36px 39px;
-  opacity: 60%;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .delivery-pop-up-link:hover::before {
@@ -1211,11 +1211,15 @@ body {
 }
 
 .delivery-pop-up-link:hover .delivery-info-icon {
-  opacity: 1;
+  color: rgba(0, 0, 0, 1);
+}
+
+.delivery-pop-up-link:active .delivery-info-icon {
+color: rgba(0, 0, 0, 0.3);
 }
 
 .delivery-pop-up-link:active {
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 .delivery-pop-up-link:focus-visible {
@@ -1996,6 +2000,7 @@ body {
 
 .sotrt-up:focus-visible,
 .sort-down:focus-visible {
+  z-index: 1;
   outline: 2px solid #af4fff;
 }
 
