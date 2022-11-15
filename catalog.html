@@ -16,8 +16,10 @@
         </a>
         <div class="user-navigation-container">
           <form  class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <label class="search-form-label" for="search"><span class="visually-hidden">Поиск по сайту.</span>
-            <input class="search-form-input" type="search" name="search" id="search" placeholder="Текст поиска"></label>
+            <label class="search-form-label" for="search">
+              <span class="visually-hidden">Поиск по сайту.</span>
+              <input class="search-form-input" type="search" name="search" id="search" placeholder="Текст поиска">
+            </label>
             <input class="search-form-button" type="submit" value="Найти">
           </form>
           <nav class="user-navigation">
@@ -231,14 +233,14 @@
                       <li class="catalog-filter-item">
                         <label class="control">
                         <input class="visually-hidden control-input" type="radio" name="bluetooth" value="true" checked>
-                        <span class="control-mark"></span>
+                        <span class="control-mark control-mark-radio"></span>
                         <span class="control-label">Есть</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
                         <input class="visually-hidden control-input" type="radio" name="bluetooth" value="flase">
-                        <span class="control-mark"></span>
+                        <span class="control-mark control-mark-radio"></span>
                         <span class="control-label">Нет</span>
                         </label>
                       </li>
@@ -329,23 +331,27 @@
                   <a class="pagination-link-back" href="#">Назад</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-link-number current" href="#"><span class="visually-hidden">Страница</span>1</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link-number" href="#"><span class="visually-hidden">Страница</span>2</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link-number" href="#"><span class="visually-hidden">Страница</span>3</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link-number" href="#"><span class="visually-hidden">Следующая страница.</span>...</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link-number" href="#"><span class="visually-hidden">Страница</span>15</a>
+                  <ul class="pagination-numbers">
+                    <li>
+                      <a class="pagination-link-number current" href="#"><span class="visually-hidden">Страница</span>1</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link-number" href="#"><span class="visually-hidden">Страница</span>2</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link-number" href="#"><span class="visually-hidden">Страница</span>3</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link-number" href="#"><span class="visually-hidden">Следующая страница.</span>...</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link-number" href="#"><span class="visually-hidden">Страница</span>15</a>
+                    </li>
+                  </ul>
                 </li>
                 <li class="pagination-item pagination-next">
                   <a class="pagination-link-forward" href="#">Вперёд</a>
-                </li>
+                 </li>
               </ul>
             </div>
           </div>
