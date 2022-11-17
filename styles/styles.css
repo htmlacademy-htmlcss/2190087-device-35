@@ -917,32 +917,35 @@ body {
   padding: 10px 39px;
 }
 
-/* Slider-table*/
-.slider-table-wrapper {
-  margin-top: 48px;
+/* Slider-parameters*/
+.slider-ptoduct-parameters {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
 
-.slider-table {
-  table-layout: fixed;
-  max-width: 100%;
+.product-parameter {
+  margin: 0;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
-.slider-table th {
-  min-width: 150px;
-  padding: 10px 7px 0 0;
+.product-parameter dd {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   font-weight: 400;
   text-align: left;
-  vertical-align: top;
 }
 
-.slider-table td {
+.product-parameter dt {
   font-size: 36px;
   color: #000000;
   min-width: 150px;
+  margin: 0;
   padding: 0;
-  padding-right: 7px;
-  vertical-align: top;
+  padding-bottom: 13px;
+  text-align: left;
 }
 
 /* Category*/
