@@ -16,9 +16,9 @@
         </a>
         <div class="user-navigation-container">
           <form  class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <label class="search-form-label" for="search" >
+            <label class="search-form-label">
               <span class="visually-hidden">Поиск по сайту.</span>
-              <input class="search-form-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
+              <input class="search-form-input" type="search" name="search" placeholder="Поиск по сайту">
             </label>
             <button class="search-form-button" type="submit">Найти</button>
           </form>
@@ -73,18 +73,14 @@
                       </li>
                     </ul>
                   </div>
-
                   <div class="cart-information">
                     <p class="cart-items-number">Товаров: 2</p>
                     <p class="cart-items-amount">Сумма: 2000 ₽</p>
-
                   </div>
                   <a class="button-open-cart" href="#">
                     <span>Открыть корзину</span>
                   </a>
                 </div>
-
-
               </li>
             </ul>
           </nav>
@@ -142,7 +138,6 @@
         </div>
     </header>
 
-
     <main class="main-container main-index">
       <div class="page-container">
         <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
@@ -161,17 +156,16 @@
                         <p class="slider-pagination-slogan">Порхает как бабочка, жалит как пчела!</p>
                         <p class="slider-pagination-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                         <a class="button product-details-button" href="#">Подробнее</a>
-                        <div class="slider-table-wrapper">
-                          <table class="slider-table">
-                            <tr>
-                              <td>800 <span class="unit">м</span></td>
-                              <td>50 <span class="unit">м</span></td>
-                            </tr>
-                            <tr>
-                              <th>Дальность полета</th>
-                              <th>Радиус поражения</th>
-                            </tr>
-                          </table>
+
+                        <div class="slider-ptoduct-parameters">
+                            <dl class="product-parameter">
+                              <dt>800 <span class="unit">м</span></dt>
+                              <dd>Дальность полета</dd>
+                            </dl>
+                            <dl class="product-parameter">
+                              <dt>50 <span class="unit">м</span></dt>
+                              <dd>Радиус поражения</dd>
+                            </dl>
                         </div>
                     </div>
                   </li>
@@ -185,15 +179,11 @@
                       <p class="slider-pagination-slogan">Худеем <br>правильно!</p>
                       <p class="slider-pagination-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                       <a class="button product-details" href="#">Подробнее</a>
-                      <div class="slider-table-wrapper">
-                        <table class="slider-table">
-                          <tr>
-                            <td>48 <span class="unit">часов</span></td>
-                          </tr>
-                          <tr>
-                            <th>Без подзарядки</th>
-                          </tr>
-                        </table>
+                      <div class="slider-ptoduct-parameters">
+                        <dl class="product-parameter">
+                          <dt>48 <span class="unit">часов</span></dt>
+                          <dd>Без подзарядки</dd>
+                        </dl>
                       </div>
                     </div>
                   </li>
@@ -204,22 +194,21 @@
                     <div class="slider-description-container">
                       <span class="slider-pagination-number">03</span>
                       <p class="slider-pagination-slogan">Делай селфи, <br>как Бен Стиллер!</p>
-                      <p class="slider-pagination-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
-                      </p>
+                      <p class="slider-pagination-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
                       <a class="button product-details" href="#">Подробнее</a>
-                      <div class="slider-table-wrapper">
-                        <table class="slider-table">
-                          <tr>
-                            <td>8,5 <span class="unit">м</span></td>
-                            <td>5 <span class="unit">кг</span></td>
-                            <td>Карбон</td>
-                          </tr>
-                          <tr>
-                            <th>Длина палки</th>
-                            <th>Вес палки</th>
-                            <th>Материал</th>
-                          </tr>
-                        </table>
+                      <div class="slider-ptoduct-parameters">
+                        <dl class="product-parameter">
+                          <dt>8,5 <span class="unit">м</span></dt>
+                          <dd>Длина палки</dd>
+                        </dl>
+                        <dl class="product-parameter">
+                          <dt>5 <span class="unit">кг</span></dt>
+                          <dd>Вес палки</dd>
+                        </dl>
+                        <dl class="product-parameter">
+                          <dt>Карбон</dt>
+                          <dd>Материал</dd>
+                        </dl>
                       </div>
                     </div>
                   </li>
@@ -227,26 +216,26 @@
 
                 <div class="slider-controls">
                   <button class="slider-button slider-prev" type="button">
-                    <span class="visually-hidden">Предыдущее фото</span>
+                    <span class="visually-hidden">Предыдущее фото.</span>
                   </button>
                   <button class="slider-button slider-next" type="button">
-                    <span class="visually-hidden">Следующее фото</span>
+                    <span class="visually-hidden">Следующее фото.</span>
                   </button>
                 </div>
                 <ol class="slider-pagination">
                   <li class="slider-pagination-item">
                     <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                      <span class="visually-hidden">1 фото</span>
+                      <span class="visually-hidden">1 фото.</span>
                     </button>
                   </li>
                   <li class="slider-pagination-item">
                     <button class="slider-pagination-button" type="button">
-                      <span class="visually-hidden">2 фото</span>
+                      <span class="visually-hidden">2 фото.</span>
                     </button>
                   </li>
                   <li class="slider-pagination-item">
                     <button class="slider-pagination-button" type="button">
-                      <span class="visually-hidden">3 фото</span>
+                      <span class="visually-hidden">3 фото.</span>
                     </button>
                   </li>
                 </ol>
@@ -298,60 +287,59 @@
         </section>
 
       <div class="services-container">
-      <section class="services">
-        <h2 class="visually-hidden">Сервисы</h2>
-          <div class="services-list-container">
-            <ol class="services-pagination-list">
-              <li class="services-pagination-item ">
-                <button class="services-pagination-button services-pagination-button-current" type="button">Доставка</button>
-              </li>
-              <li class="services-pagination-item">
-                <button class="services-pagination-button" type="button">Гарантия</button>
-              </li>
-              <li class="services-pagination-item">
-                <button class="services-pagination-button" type="button">Кредит</button>
-              </li>
-            </ol>
-          </div>
-          <div class="services-description">
-            <ul class="servises-list">
-              <li class="services-item services-current">
-                <h3 class="services-pagination-title services-pagination-title-delivery">Доставка</h3>
-                <p class="services-pagination-detail">Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно бесплатно! Ведь <br>мы неплохо заработаем, поднимая его на ваш этаж.</p>
-              </li>
-              <li class="services-item">
-                <h3 class="services-pagination-title services-pagination-title-warranty">Гарантия</h3>
-                <p class="services-pagination-detail">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-              </li>
-              <li class="services-item">
-                <h3 class="services-pagination-title services-pagination-title-credit">Кредит</h3>
-                <p class="services-pagination-detail">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-              </li>
-            </ul>
-          </div>
+        <section class="services">
+          <h2 class="visually-hidden">Сервисы</h2>
+            <div class="services-list-container">
+              <ol class="services-pagination-list">
+                <li class="services-pagination-item ">
+                  <button class="services-pagination-button services-pagination-button-current" type="button">Доставка</button>
+                </li>
+                <li class="services-pagination-item">
+                  <button class="services-pagination-button" type="button">Гарантия</button>
+                </li>
+                <li class="services-pagination-item">
+                  <button class="services-pagination-button" type="button">Кредит</button>
+                </li>
+              </ol>
+            </div>
+            <div class="services-description">
+              <ul class="servises-list">
+                <li class="services-item services-current">
+                  <h3 class="services-pagination-title services-pagination-title-delivery">Доставка</h3>
+                  <p class="services-pagination-detail">Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно бесплатно! Ведь <br>мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                </li>
+                <li class="services-item">
+                  <h3 class="services-pagination-title services-pagination-title-warranty">Гарантия</h3>
+                  <p class="services-pagination-detail">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                </li>
+                <li class="services-item">
+                  <h3 class="services-pagination-title services-pagination-title-credit">Кредит</h3>
+                  <p class="services-pagination-detail">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+                </li>
+              </ul>
+            </div>
+        </section>
+      </div>
 
-      </section>
-    </div>
 
-
-          <section class="delivery-block">
-            <h2 class="visually-hidden">Доставка редкого товара</h2>
-              <a class="delivery-pop-up-link" href="#">
-                <p class="delivery-information">Доставим редкий товар под заказ</p>
-                <svg class="delivery-info-icon" width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity="0.5"/>
-                  <g clip-path="url(#clip0_11468_3000)">
-                  <path d="M21 14H19V16H21V14Z" fill="currentColor"/>
-                  <path d="M21 18H19V26H21V18Z" fill="currentColor"/>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_11468_3000">
-                  <rect width="2" height="12" fill="white" transform="translate(19 14)"/>
-                  </clipPath>
-                  </defs>
-                  </svg>
-              </a>
-          </section>
+        <section class="delivery-block">
+          <h2 class="visually-hidden">Доставка редкого товара</h2>
+            <a class="delivery-pop-up-link" href="#">
+              <p class="delivery-information">Доставим редкий товар под заказ</p>
+              <svg class="delivery-info-icon" width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity="0.5"/>
+                <g clip-path="url(#clip0_11468_3000)">
+                <path d="M21 14H19V16H21V14Z" fill="currentColor"/>
+                <path d="M21 18H19V26H21V18Z" fill="currentColor"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_11468_3000">
+                <rect width="2" height="12" fill="white" transform="translate(19 14)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </a>
+        </section>
 
 
         <div class="about-container">
@@ -403,8 +391,6 @@
             </form>
             <span class="subscription-free">Это бесплатно</span>
           </div>
-
-
         </section>
         </div>
     </main>
@@ -450,19 +436,19 @@
                 <li class="footer-social-item">
                   <a class="footer-social-link footer-social-telegram" href="https://t.me/htmlacademy">
                     <svg class="footer-social-icon" aria-hidden="true" focusable="false" width="14" height="12" viewBox="0 0 14 12"  xmlns="http://www.w3.org/2000/svg"><path d="M12.44.07.62 4.63c-.8.33-.8.78-.14.98l3.03.94 7.02-4.43c.33-.2.64-.09.39.13l-5.7 5.13-.2 3.13c.3 0 .44-.14.61-.3l1.48-1.44 3.06 2.27c.57.31.97.15 1.12-.53l2-9.48c.21-.83-.3-1.2-.85-.96Z"/></svg>
-                    <span class="visually-hidden">Телеграм</span>
+                    <span class="visually-hidden">Телеграм.</span>
                   </a>
                 </li>
                 <li class="footer-social-item">
                   <a class="footer-social-link footer-social-youtube" href="https://www.youtube.com/user/htmlacademyru">
                     <svg class="footer-social-icon" aria-hidden="true" focusable="false" width="16" height="11" viewBox="0 0 16 11" xmlns="http://www.w3.org/2000/svg"><path d="M15.67 1.67c-.1-.32-.27-.61-.51-.84-.25-.24-.56-.41-.9-.5C13.01 0 8 0 8 0 5.9-.02 3.8.08 1.74.32 1.4.4 1.1.58.84.82c-.24.24-.42.53-.51.85A19.4 19.4 0 0 0 0 5.34C0 6.56.1 7.79.33 9c.09.32.27.61.51.85.25.23.56.4.9.5 1.27.32 6.26.32 6.26.32 2.09.02 4.18-.08 6.26-.31.34-.09.65-.26.9-.5.24-.23.42-.52.5-.84.24-1.21.35-2.44.34-3.67.02-1.23-.1-2.46-.33-3.68ZM6.4 7.62V3.05l4.18 2.29L6.4 7.62Z"/></svg>
-                    <span class="visually-hidden">YouTube</span>
+                    <span class="visually-hidden">YouTube.</span>
                   </a>
                 </li>
                 <li class="footer-social-item">
                   <a class="footer-social-link footer-social-twitter" href="https://twitter.com/htmlacademy_ru">
                     <svg class="footer-social-icon" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"><path d="M9.7.16c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4C1 5.26-.2 2.36.8.86c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z"/></svg>
-                    <span class="visually-hidden">Твиттер</span>
+                    <span class="visually-hidden">Твиттер.</span>
                   </a>
                 </li>
               </ul>
@@ -494,7 +480,7 @@
           <div class="delivery-title-wrapper">
           <h2 class="modal-title">Доставка под заказ</h2>
           <button class="modal-close-button" type="button">
-            <span class="visually-hidden">Закрыть</span>
+            <span class="visually-hidden">Закрыть.</span>
             </button>
           </div>
 
@@ -528,11 +514,11 @@
 
                 <div class="delivery-form-quantity-wrapper">
                   <button type="button" class="delivery-quantity-less">
-                    <span class="visually-hidden">Меньше</span>
+                    <span class="visually-hidden">Меньше.</span>
                   </button>
                   <input class="field delivery-quantity-field" type="number" min="1" step="1" id="delivery-quantity" name="delivery-quantity" placeholder="1">
                   <button type="button" class="delivery-quantity-more">
-                    <span class="visually-hidden">Больше</span>
+                    <span class="visually-hidden">Больше.</span>
                   </button>
                 </div>
 

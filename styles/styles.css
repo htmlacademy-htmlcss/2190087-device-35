@@ -147,7 +147,6 @@ body {
   background-color: #ffe17f;
 }
 
-
 /* Search-form*/
 .search-form {
   display: grid;
@@ -238,7 +237,6 @@ body {
   border: 2px solid #af4fff;
   display: none;
 }
-
 
 .search-form-button:focus-visible {
   outline: none;
@@ -510,7 +508,6 @@ body {
   opacity: 0.3;
 }
 
-
 .button-open-cart:focus-visible {
   outline: 2px solid #af4fff;
 }
@@ -573,6 +570,7 @@ body {
 .subcatalog-section-item {
   margin-bottom: 7px;
 }
+
 .subcatalog-item:nth-child(2) {
   margin-right: 0;
 }
@@ -722,7 +720,6 @@ body {
   background-color: #000000;
   content: "";
 }
-
 
 /* Slider*/
 .slider-container {
@@ -917,36 +914,38 @@ body {
   padding: 10px 39px;
 }
 
-/* Slider-table*/
-.slider-table-wrapper {
-  margin-top: 48px;
+/* Slider-parameters*/
+.slider-ptoduct-parameters {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
 
-.slider-table {
-  table-layout: fixed;
-  max-width: 100%;
+.product-parameter {
+  margin: 0;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
-.slider-table th {
-  min-width: 150px;
-  padding: 10px 7px 0 0;
+.product-parameter dd {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   font-weight: 400;
   text-align: left;
-  vertical-align: top;
 }
 
-.slider-table td {
+.product-parameter dt {
   font-size: 36px;
   color: #000000;
   min-width: 150px;
+  margin: 0;
   padding: 0;
-  padding-right: 7px;
-  vertical-align: top;
+  padding-bottom: 13px;
+  text-align: left;
 }
 
 /* Category*/
-
 .category {
   width: 1160px;
   margin: 0 auto;
@@ -1489,7 +1488,6 @@ body {
   outline-offset: 2px;
 }
 
-
 .subscription-form-input:not(:placeholder-shown) {
   outline: none;
 }
@@ -1770,6 +1768,7 @@ body {
   width: 1160px;
   margin: 0 auto;
 }
+
 /* Breadcrumbs*/
 .breadcrumbs {
   display: flex;
@@ -1807,6 +1806,7 @@ body {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
+
 /* Filter*/
 .fieldset {
   position: relative;
@@ -1847,7 +1847,6 @@ body {
 .catalog-filter-price {
   margin-bottom: 70px;
 }
-
 
 .range-scale {
   position: relative;
@@ -1960,7 +1959,6 @@ body {
   font-weight: 400;
   color: #000000;
 }
-
 
 .filter-button {
   padding: 10px 50px;
@@ -2269,6 +2267,7 @@ body {
 .product-card-image {
   object-fit: contain;
 }
+
 /* Catalog-pagianation*/
 .pagination {
   display: flex;
